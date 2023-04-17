@@ -78,7 +78,71 @@
             <p>Video and audio recordings for the meetings can be found here</p>
             <details>dummy audio and video rn</details>
         </section>
+        
+        <br>
 
+        <form action="submit.php" method="post">
+  
+            <label for="Name">Name: </label>
+            <input type="text" id="name" name="user_name" />
+            <br>
+            <br>
+            <label for="fact">Tell me a fun fact!:</label>
+            <textarea id="fact" name="user_fact"></textarea>
+
+            <br> <br>
+            <label for = "gdate"> Graduation Date</label><br>
+            <input type = "date" id = "gdate" name = "gdate"><br>
+            <br>
+
+          <fieldset>
+            <legend>What's your favoite coding language?</legend>
+        
+            <input type="radio" id="Java" name="p_language" value="J">
+            <label for="Java">Java</label><br>
+            
+            <input type="radio" id="Python" name="p_language" value="P">
+            <label for="Python">Python</label><br>
+        
+            <input type="radio" id="C++" name="p_language" value="C">
+            <label for="C++">C++</label><br>
+
+            <input type="radio" id="Other" name="p_language" value="O">
+            <label for="Other">Other</label><br>
+          </fieldset>
+
+          <br>
+          <label for="snack-choice">Choose a type of candy:</label>
+        <input list="snack-flavors" id="snack-choice" name="snack-choice">
+      <datalist id="snack-flavors">
+          <option value="Chocolate">
+          <option value="Sour">
+          <option value="Gummy">
+          <option value="Sweet">
+          <option value="Hard">
+            <option value="Other"></option>
+      </datalist>
+      <br>
+      <label for="major">What's your major?:</label>
+    <br>
+      <select name="major" id="major">
+          <option value="">--Select--</option>
+          <option value="Math-CS">Math-CS</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Computer Engineering">Computer Engineering</option>
+          <option value="Other">Other</option>
+      </select>
+      <p>What other classes are you taking?</p>
+                        <input type = "checkbox" id = "101" name = "101" value = "101">
+                        <label for = "101">CSE101</label><br>
+                        <input type = "checkbox" id = "105" name = "105" value = "105">
+                        <label for = "105">CSE105</label><br>
+                        <input type = "checkbox" id = "1000" name = "100" value = "100">
+                        <label for = "100">CSE100</label><br>
+                        <br>
+      <p class="button">
+        <button type="submit">Submit</button>
+      </p>
 
 
 
