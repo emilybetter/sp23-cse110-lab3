@@ -39,7 +39,10 @@
         </section>
 
         <section class="block">
-            <h2 id="Attendance"> Attendance</h2>
+            <details>
+                <summary>Attendance</summary>
+                Names of attendees
+                </details>
             <ol>
                 <!-- <li><input type="checkbox"> Emily Better</li> -->
                 <li> <b> Emily Better </b></li>
@@ -60,7 +63,7 @@
             <h2 id="Unfinished_Business"> Unfinished Business</h2>
             <hr>
             <p><span>Unfinished Business for this meeting</span> </p>
-            <details>Not applicable for this meeting- this is <i>our first meeting</i> </details>
+            <p>Not applicable for this meeting- this is our first meeting</p>
         </section>
 
         <section class="block">
@@ -83,7 +86,7 @@
 
         <form action="submit.php" method="post">
   
-            <label for="Name">Name: </label>
+            <label for="name">Name: </label>
             <input type="text" id="name" name="user_name" />
             <br>
             <br>
@@ -145,7 +148,7 @@
       </p>
 
 
-
+      </form>
     </main>
     <footer></footer>
 </body>
