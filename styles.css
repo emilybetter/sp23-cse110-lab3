@@ -1,0 +1,197 @@
+
+/* Universal Selector (*) */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /*body*/
+  body {
+    background-color: rgb(58, 28, 223);
+    background-size: cover;
+    background-position: center;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  header {
+    background-color:  #ffffff;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* header:hover {
+    background-color: lightblue;
+  }
+   */
+  
+   /*color of unvisited link */
+  a:link { 
+    color: red; 
+  }
+  
+  /*color of visited link */
+  a:visited { 
+    color: #440668; 
+  }
+  
+  
+  button:active{
+    color: red;
+  }
+  
+  /*h1*/
+  h1 {
+    margin: 0;
+    text-align: center;
+    font-family: 'Castoro Titling', sans-serif;
+    text-decoration: underline overline;
+    position: sticky;
+  }
+  
+  nav {
+    border: 1px solid #1a302c;
+    border-radius: 5px;
+    padding: 1vw;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+  }
+  
+  #Agenda {
+    display: grid;
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: auto;
+    grid-row-end: auto;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 1vh;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  
+  main {
+    max-width: 800px;
+    min-width: 100px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  /* Margin of h2, h3, h4
+  selector list
+  */
+  h2, h3, h4 {
+    margin: 5 10 15px;
+  }
+  
+  
+  /* style and margin of u1 */
+  ul {
+    list-style: circle;
+    margin-left: 40px;
+  }
+  
+  /* style and margin of 01 */
+  ol {
+    list-style: decimal;
+    margin-left: 25px;
+  }
+  
+  /*margin of details*/
+  details {
+    margin-left: 30px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  audio, video {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    width: 100px;
+    height: 100px;
+    background-color: #B7E1F5;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  /* .video-container {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+  } */
+  
+  .video-container video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  /* Descendant Combinator (element element) */
+  li li {
+    list-style-type: disc;
+  }
+  
+  /* Child Combinator (element > element) */
+  header > h1 {
+    font-weight: bold;
+  }
+  
+  /* General sibling combinator (element ~ element) */
+  h2 ~ p {
+    font-size: 30px;
+  }
+  
+  
+  /* Adjacent sibling combinator (element + element) */
+  p + p {
+    color: aquamarine;
+  }
+  
+  /* Combining Two Selectors (element.class) */
+  header.title {
+    color: darkslategrey;
+  }
+  
+  
+  
+  @media (max-width: 5cm) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+  }
